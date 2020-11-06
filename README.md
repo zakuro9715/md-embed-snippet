@@ -2,23 +2,6 @@
 
 Embed code snippet to markdown
 
-<pre>
-$ cat README.template.md
-# Examples
-
-__examples__
-
-$ cat example.txt
-example
-$ ./embed-snippet README.template.md __examples__ examples.txt > README.md
-$ cat README.md
-# Examples
-
-```examples.txt
-example
-```
-</pre>
-
 ## Install
 
 Just copy embed-snippet into your procjet.
@@ -39,6 +22,26 @@ Args:
     placeholder - text to replace. e.g. __examples__
     snippets    - files to embed e.g. examples/*
 ```
+
+<pre>
+$ wget https://raw.githubusercontent.com/zakuro9715/md-embed-snippet/main/embed-snippet.py
+$ cat README.template.md
+# Examples
+
+__examples__
+
+$ cat example.txt
+example
+$ ./embed-snippet.py README.template.md __examples__ examples.txt > README.md
+$ cat README.md
+# Examples
+
+```examples.txt
+example
+```
+</pre>
+
+
 
 ## Motivation
 
